@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form and Content</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My HTML5 Showcase Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and HTML5 form validation features.</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Features List</h2>
+        <ul>
+            <li>Semantic HTML5 elements</li>
+            <li>Embedded media (image, audio, and video)</li>
+            <li>Structured content with tables and lists</li>
+            <li>Interactive and validated HTML5 form</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sample Table: Web Development Topics</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Topic</th>
+                    <th>Description</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Markup language for structuring web pages</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Styling language for presentation</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Programming language for interactivity</td>
+                    <td>Hard</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media Examples</h2>
+        <figure>
+            <img src="https://via.placeholder.com/600x200" alt="Placeholder Image" width="600">
+            <figcaption>Sample image embedded using HTML5.</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="600" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required minlength="2" placeholder="John">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required minlength="2" placeholder="Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="12" pattern="[a-zA-Z0-9]+" placeholder="john123">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="••••••">
+
+                <label for="role">Select a Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">-- Choose One --</option>
+                    <option value="student">Student</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                </select>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes">
+                    Subscribe to newsletter
+                </label>
+
+                <label>
+                    <input type="radio" name="contact" value="email" required>
+                    Contact me via Email
+                </label>
+
+                <label>
+                    <input type="radio" name="contact" value="phone">
+                    Contact me via Phone
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Registration">
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 My HTML5 Showcase. Ayoola</p>
+</footer>
+
+</body>
+</html>
